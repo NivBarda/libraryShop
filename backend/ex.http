@@ -1,0 +1,25 @@
+@local = http://localhost:8800
+
+POST {{local}}/signup
+Content-Type: application/json
+
+{
+    "username":"niv",
+    "password":"123456"
+}
+
+###
+
+POST {{local}}/login
+Content-Type: application/json
+
+{
+    "username":"niv",
+    "password":"123456"
+}
+
+
+###
+GET {{local}}/books
+
+Cookie: "token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5pdiIsImlhdCI6MTY3ODEwOTA4OX0.bKZERi_ZJIAAvHc2beS05rS-JI5DZowGgcAL6U_x_Xc"
